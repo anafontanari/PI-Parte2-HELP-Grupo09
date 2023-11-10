@@ -1,0 +1,485 @@
+/*** "Zera" os elementos inicialmente ***/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style-type: none;
+}
+
+/*
+======Formatação do iframe - utilzado para o header e footer de todas as telas
+*/
+
+iframe{
+  width: 100%;
+  height: 240px;
+}
+
+/*
+=====Formatação do header de todas as telas
+*/
+
+header {
+  display: flex;
+  flex-flow: column wrap;
+  height: auto;
+  align-items: center;
+}
+
+.top{
+  width: 100%;
+  height: 50px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.botton{
+  width: 15%;
+  height: 150px;
+}
+
+h1{
+  font-style: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+/*
+=====Formatação do footer de todas as telas
+*/
+
+footer{
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+}
+
+h4{
+  color: #b3b2b2;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+  
+/*
+=====Formatação do body e recursividade de todas as telas
+*/
+
+body{
+  background-color: #ededed;
+}
+
+.container {
+	max-width: 80%;
+  margin: auto;
+	background-color: #ededed;
+	padding: 20px;
+}
+
+@media(max-width:480px){
+  body{
+    background-color: #ededed;
+  }
+}
+@media screen and (win-width:481px) and(max-width:800px){
+  body{
+    background-color: #ededed;
+  }
+}
+@media screen and (min-width:801px) and (max-width: 1360px){
+  body{
+    background-color: #ededed;
+  }
+}
+@media screen and (min-width:1361px) {
+  body{
+    background-color: #ededed;
+  }
+}
+
+/*
+=====Formatação dos botões
+*/
+   
+button {
+  background-color: #ccc;
+  color: #d70fd7;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 30%;
+}
+
+#smaller{
+  width: 20%;
+  margin-left: 80px;
+}
+
+#smallerCenter{
+  width: 20%;
+  margin-top: 40px;
+  margin-left: 440px;
+}
+
+#smallerRight{
+  width: 20%;
+  margin-top: 30px;
+  margin-left: 680px;
+}
+
+#black{
+  width: 58%;
+  font-size: 18px;
+  color: rgb(74, 9, 74);
+}
+
+.color{
+  background-color: purple;
+  color: white;
+  width: 80%;
+  margin-top: 20px;
+}
+
+.color a{
+  text-decoration: none;
+  color: white;
+}
+
+.color2{
+  background-color: white;
+  color:#484747;
+  width: 100%;
+  border: solid 3px #e1e0e0;
+  font-size: 24px;
+}
+
+/*
+=====Formatação da tela inicial
+*/
+.menu{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  height: auto;
+  align-items: center;
+  max-width: 100%;
+  padding-top: 40px;
+}
+
+.container2{
+  display: flex;
+  flex-flow: row wrap;
+  height: auto;
+  width: 100%;
+  padding-top: 40px;
+}
+
+.left{
+  width: 33%;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 40px;
+  padding-bottom: 20px;
+}
+
+.right{
+  width: 63%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.sec{
+  display: flex;
+  flex-flow: row;
+  height: auto;
+  justify-content: space-around;
+  width: 90%;
+  margin-top: 20px;
+  margin-left: 40px;
+  border: solid 4px #d70fd7;
+  background-color: white;
+}
+
+.right-left{
+  max-width: 30%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.right-right{
+  width: 65%;
+}
+
+.top-small{
+  max-width: 100%;
+  padding-top: 10px;
+  text-align: center;  
+}
+
+.botton-small{
+  max-width: 100%;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+h3{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#9c9c9c
+}
+
+/*
+=====Formatação da tela de cadastroUsuario
+*/
+
+.center{
+  text-align: center;
+  margin-top: 30px;  
+}
+
+.centerSelect{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:space-around;
+  width: 50%;
+  margin-left:50px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #d70fd7;
+}
+
+input[type="radio"]:checked::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 4px;
+  background-color: rgb(70, 5, 70);
+  border-radius: 100%;
+}
+
+/*
+=====Formatação da tela de login
+*/
+
+form {
+  display: flex;
+  flex-flow: column;
+  width: 100%
+}
+
+.date{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: right;
+  margin-left: 250px;
+  width: 60%;
+}
+      
+label {
+  display: inline-block;
+  margin-top: 2px;
+  font-style: italic;
+  font-size: 20px;
+}
+      
+input[type="text"], input[type="email"], input[type="tel"]{
+  display: block;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="password"]{
+  display: block;
+  text-align: left;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 60%;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #a2a0a0;
+  color: white;
+  font-size: 18px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  width: 50%;
+  margin-left: 100px;
+}
+
+.password{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+p{
+  font: 14px black arial;
+  margin-top: 10px;
+}
+
+.button-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: 200px;
+  width:60%;
+}
+
+/* 
+=====Formatação das telas contratante e acompanhante
+*/
+  
+.iconecliente div img{
+  height: 90px;
+  width: 90px;
+
+}
+.contacli{
+  font-size: 15px;
+  margin: 20px;
+}
+
+.containercliente{
+  display: flex;
+  flex-flow: column;
+  height: auto;
+  width: auto;
+  align-items: center;
+}
+
+.line{
+  width: 100%;
+  height: 1%;
+  border: solid gray 1px;
+}
+
+.dados{
+  display: flex;
+  flex-flow: column wrap;
+  height: auto;
+  width: 400px;
+}
+
+.secCliente{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.secCliente img{
+  width: 10%;
+  height: 40px;
+  align-items: center;
+  margin: 10px 10px;
+}
+
+.secCliente button{
+  width: 90%;
+  height: 40px;
+  text-align: left;
+  background-color: #ededed;
+  margin: 10px 10px;
+}
+
+.secCliente p{
+  width: 60%;
+  height: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  font-size: 24px;
+  white-space: nowrap;
+    margin: 10px 10px;
+}
+
+.Contratar div{
+  margin-top: 10px;
+  margin-bottom: 30px;
+  
+}
+.Contratar div a{
+  flex-flow: column wrap;
+  color:black;
+  font-style:unset;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 20px;
+  padding-right:85px;
+
+}
+.Contratar div img{
+  height: 30px;
+  width: 30px;
+}
+
+.Contratar div img{
+  padding-left: 150px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width:60%;
+}
+
+.purple-button {
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 10px;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+}
+
+#ligthColor{
+  background-color: #d70fd7;
+}
+
+.purple-button a{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
